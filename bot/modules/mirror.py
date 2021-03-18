@@ -156,7 +156,7 @@ class MirrorListener(listeners.MirrorListeners):
             else:
                 uname = f'<a href="tg://user?id={self.message.from_user.id}">{self.message.from_user.first_name}</a>'
             if uname is not None:
-                msg += f'\n\n{uname} Your File Is Uploaded✅\n\n<b>🚫 DO NOT SHARE ANY LINK PUBLICLY 🚫</b>\n\n<b>💥POWERED BY : </b> @Moviesbazz'
+                msg += f'\n\n{uname} ʏᴏᴜʀ ꜰɪʟᴇ ɪs ᴜᴘʟᴏᴀᴅᴇᴅ✅\n\n<b>🚫ᴅᴏ ɴᴏᴛ sʜᴀʀᴇ ᴀɴʏ ʟɪɴᴋ ᴘᴜʙʟɪᴄʟʏ🚫</b>\n\n<b>➥ᴘᴏᴡᴇʀᴇᴅ ʙʏ: </b> @MoviesBazzz'
             try:
                 fs_utils.clean_download(download_dict[self.uid].path())
             except FileNotFoundError:
